@@ -41,7 +41,7 @@ textarea{
 }
 
 .time-block{
-  background-color: #fff8ed;
+  background-color: #f5f3f1;
   text-align: center;
   border-radius: 15px;
 }
@@ -60,17 +60,17 @@ textarea{
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #f5f3f1;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: rosybrown;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #5d815d;
   color: white;
 }
 

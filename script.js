@@ -17,6 +17,31 @@ $(document).ready(function () {
     $("#currentDay").text(moment().format("LLL"));
     function timeFrame() {
         var currentHour = moment().hour();
+
+        $(".time-block").each(function () {
+            var hour = $(this).attr("id");
+            var colorHour = hour.substring(5, hour.length);
+            var colorHourInt = parseInt(colorHour)
+            var currentHourInt = parseInt(currentHour);
+            console.log(currentHour, colorHourInt)
+            if (parseInt(colorHourInt) < parseInt(currentHourInt)) {
+                $(this).addClass("past");
+                $(this).removeClass("future");
+                $(this).removeClass("present");
+            }
+            else if (parseInt(colorHourInt) > parseInt(currentHourInt)) {
+                $(this).addClass("future");
+                $(this).removeClass("present");
+                $(this).removeClass("past");
+            }
+            else if (parseInt(colorHourInt) === parseInt(currentHourInt)) {
+                $(this).addClass("present");
+                $(this).removeClass("future");
+                $(this).removeClass("past");
+            }
+        })
+
     };
     timeFrame();
+
 });
