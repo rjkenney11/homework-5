@@ -1,5 +1,3 @@
-# homework-5
-
 # Work Day Planner
   
 ### Description: 
